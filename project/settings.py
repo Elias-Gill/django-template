@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 # tailwind config
 COMPRESS_ENABLED = True
 COMPRESS_ROOT = BASE_DIR / "static"
-STATICFILES_FINDERS = "compressor.finders.CompressorFinder"
+STATICFILES_FINDERS = ("compressor.finders.CompressorFinder",)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
